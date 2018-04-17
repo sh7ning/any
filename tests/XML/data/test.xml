@@ -1,0 +1,12 @@
+<xml service="demo">
+    <MsgId>msg</MsgId>
+    <Ext name="ToUserName"><![CDATA[toUser]]></Ext>
+    <Ext name="ext-parent">
+        <E1 name="ext-sub"><![CDATA[e1]]></E1>
+        <E2>
+            <EX2 name="ext-info">
+                22
+            </EX2>
+        </E2>
+    </Ext>
+</xml>
