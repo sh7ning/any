@@ -7,6 +7,8 @@ use Tree6bee\Any\Encryption\Contracts\Encrypt as EncryptBase;
 /**
  * !!! 建议更新为 openssl 实现，不要用此类了...
  *
+ * php 官方不建议使用 mcrypt
+ *
  * 简单版本的AES
  *
  * ---------以下为一些加解密的整理-----

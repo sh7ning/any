@@ -7,6 +7,7 @@ use Exception;
 
 /**
  * !!! 建议更新为 openssl 实现，不要用此类了...
+ * php 官方不建议使用 mcrypt
  *
  * 复杂版本的AES加密
  * 参考 laravel 实现
