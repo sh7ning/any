@@ -6,6 +6,8 @@ use Tree6bee\Any\Encryption\Contracts\Encrypt as EncryptBase;
 use Exception;
 
 /**
+ * !!! 建议更新为 openssl 实现，不要用此类了...
+ *
  * 复杂版本的AES加密
  * 参考 laravel 实现
  *
