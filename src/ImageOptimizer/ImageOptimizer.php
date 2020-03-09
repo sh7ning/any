@@ -1,5 +1,7 @@
 <?php
 
+namespace Tree6bee\Any\ImageOptimizer;
+
 /**
  * 图片压缩 压图类
  *
@@ -18,12 +20,12 @@ class ImageOptimizer
     /**
      * @param $source
      * @param $destination
-     * @throws Exception
+     * @throws \RuntimeException
      */
     public static function compress($source, $destination)
     {
         if (!file_exists($source)) {
-            throw new \Exception("文件不存在");
+            throw new \RuntimeException("文件不存在");
         }
 
         $optimizer = new static();
@@ -40,7 +42,7 @@ class ImageOptimizer
                 $optimizer->compressGif($source, $destination);
                 break;
             default:
-                throw new \Exception('不支持的文件类型');
+                throw new \RuntimeException('不支持的文件类型');
         }
     }
 
@@ -99,7 +101,7 @@ class ImageOptimizer
     /**
      * @param $cmd
      * @return string
-     * @throws RuntimeException
+     * @throws \RuntimeException
      */
     protected function runCmd($cmd)
     {
