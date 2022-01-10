@@ -36,6 +36,8 @@ use Tree6bee\Any\Encryption\Contracts\Encrypt as EncryptBase;
  *  定长(16进制)：md5:32, sha1:40, sha256:64, crc:8
  *  双向：AES, openssl
  *  单向：
+ *  对称
+ *  非对称：RSA 
  *
  * @copyright sh7ning 2016.1
  * @author    sh7ning
